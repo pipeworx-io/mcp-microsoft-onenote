@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-microsoft-onenote",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Microsoft OneNote (Microsoft 365) MCP Pack",
   "type": "module",
   "main": "src/index.ts",
