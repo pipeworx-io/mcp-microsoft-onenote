@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-microsoft-onenote",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Microsoft OneNote (Microsoft 365) MCP Pack",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-microsoft-onenote": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "microsoft-onenote"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-microsoft-onenote.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/microsoft-onenote",
   "pipeworx": {
-    "sourceHash": "v1-5697b3a9223a6696d4b6e7e2e29ba36c4b190356177feace2d11329b94600bc4",
-    "sourceCommit": "ba9dd6df5992aeb16ef2425ee86d1752c34ca636"
+    "mode": "gateway",
+    "slug": "microsoft-onenote",
+    "gatewaySlug": "microsoft_onenote",
+    "sourceHash": "v1-fed583adc7de7e80b6ad411ba48aa0046243df132df276faf5603d9eabb1f5d2",
+    "sourceCommit": "5c89d6abb778d45da5d92002eb251978622bedf9"
   }
 }
