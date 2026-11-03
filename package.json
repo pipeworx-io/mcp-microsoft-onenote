@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-microsoft-onenote",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Microsoft OneNote (Microsoft 365) MCP Pack",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "microsoft-onenote",
     "gatewaySlug": "microsoft_onenote",
-    "sourceHash": "v1-fed583adc7de7e80b6ad411ba48aa0046243df132df276faf5603d9eabb1f5d2",
-    "sourceCommit": "5c89d6abb778d45da5d92002eb251978622bedf9"
+    "sourceHash": "v1-aa7f696acc50eb2dc26c5c74f0d945e05da66dce8c1a701cb573e2448d361607",
+    "sourceCommit": "56cf550e46fed96c0101a3877ccaf8357eecf016"
   }
 }
